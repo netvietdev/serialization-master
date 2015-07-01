@@ -3,7 +3,7 @@ using Rabbit.SerializationMaster;
 using Rabbit.SerializationMaster.JsonNet;
 using Serialization.Tests.ObjectTests;
 
-namespace Serialization.Tests
+namespace Serialization.Tests.JsonNet
 {
     [TestClass]
     public class JsonSerializationStrategyTest

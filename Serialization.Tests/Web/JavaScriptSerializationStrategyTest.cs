@@ -3,7 +3,7 @@ using Rabbit.SerializationMaster;
 using Rabbit.SerializationMaster.Web;
 using Serialization.Tests.ObjectTests;
 
-namespace Serialization.Tests
+namespace Serialization.Tests.Web
 {
     [TestClass]
     public class JavaScriptSerializationStrategyTest
