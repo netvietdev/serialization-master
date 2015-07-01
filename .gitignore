@@ -1,0 +1,7 @@
+/_ReSharper.SmileXmlSerialization
+*/bin
+*/obj
+*/*.user
+/SmileXmlSerialization.sln.DotSettings.user
+/SmileXmlSerialization.suo
+/SmileSerialization.sln.DotSettings.user
