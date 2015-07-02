@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster.JsonNet</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>SerializationMaster JsonNet</title>
     <authors>NetVietDev</authors>
     <owners></owners>
     <description>
-      This library enables you to serialize an object of any type to json format and to deserialize a resulted string back to object instance based on JsonConvert.
+      This library enables you to serialize an object of any type to json format and to deserialize a resulted string back to object instance based on Json.NET.
     </description>
     <releaseNotes>
     </releaseNotes>

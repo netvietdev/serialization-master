@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Smile.Serialization</id>
+    <version>3.0.1</version>
+    <title>Smile Serialization</title>
+    <authors>NetVietDev</authors>
+    <owners></owners>
+    <description>
+      This library [ :) Serialization ] enables you to serialize an object of any type to string format (xml/json/base64) and to deserialize a resulted string back to object instance. Also it supports to implement a custom serialization strategy.
+    </description>
+    <releaseNotes>
+      Version 3.0.1
+      * Fix Xml deserialization
+
+      Version 3.0.0
+      * The builder now is internal
+      * Use extension methods for serializing tasks
+      * Use Deserialize.To methods for deserializing tasks
+    </releaseNotes>
+    <summary>
+      This library [ :) Serialization ] enables you to serialize an object of any type to string format (xml/json/base64) and to deserialize a resulted string back to object instance. Also it supports to implement a custom serialization strategy.
+      It brings ease of use by turing extention methods to any object of any type such as .ToXml, .ToJson, .ToBase64 and more.
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/netvietdev/smile-serialization</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>Copyright @ NetVietDev 2015</copyright>
+    <dependencies>
+      <group targetFramework="net40">
+        <dependency id="Newtonsoft.Json" version="6.0.8" />
+      </group>
+    </dependencies>
+    <references></references>
+    <tags>Xml Json Base64 ToString Serialization</tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>
