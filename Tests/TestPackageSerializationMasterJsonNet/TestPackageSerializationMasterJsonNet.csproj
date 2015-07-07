@@ -47,10 +47,10 @@
       <HintPath>..\..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Rabbit.SerializationMaster">
-      <HintPath>..\..\packages\Rabbit.SerializationMaster.3.0.0\lib\Rabbit.SerializationMaster.dll</HintPath>
+      <HintPath>..\..\packages\Rabbit.SerializationMaster.4.0.0\lib\Rabbit.SerializationMaster.dll</HintPath>
     </Reference>
     <Reference Include="Rabbit.SerializationMaster.JsonNet">
-      <HintPath>..\..\packages\Rabbit.SerializationMaster.JsonNet.1.0.0\lib\Rabbit.SerializationMaster.JsonNet.dll</HintPath>
+      <HintPath>..\..\packages\Rabbit.SerializationMaster.JsonNet.2.0.0\lib\Rabbit.SerializationMaster.JsonNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

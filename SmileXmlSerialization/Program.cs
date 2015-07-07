@@ -94,7 +94,7 @@ namespace SmileXmlSerialization
                 Console.WriteLine("Json serialized result: " + result);
                 Console.WriteLine("Length is: " + result.Length);
 
-                p2 = Serializer.Deserialize<Person>(result);
+                p2 = result.Deserialize<Person>();
                 Console.WriteLine("Json deserialized result: " + p2.Name + " | " + p2.Age + " | " + p2.LivingAddress.Number);
             }
             catch (Exception ex)

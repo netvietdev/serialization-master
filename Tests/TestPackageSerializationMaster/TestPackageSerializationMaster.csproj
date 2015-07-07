@@ -34,9 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Rabbit.SerializationMaster, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Rabbit.SerializationMaster.3.1.0\lib\Rabbit.SerializationMaster.dll</HintPath>
+    <Reference Include="Rabbit.SerializationMaster">
+      <HintPath>..\..\packages\Rabbit.SerializationMaster.4.0.0\lib\Rabbit.SerializationMaster.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
