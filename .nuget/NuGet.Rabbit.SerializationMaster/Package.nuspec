@@ -2,21 +2,31 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster</id>
-    <version>3.1.0</version>
+    <version>4.0.0</version>
     <title>SerializationMaster</title>
     <authors>NetVietDev</authors>
     <owners>junioho</owners>
     <description>
       This library enables you to serialize an object of any type to string format (xml/json/base64) and to deserialize a resulted string back to object instance. Also it supports to implement a custom serialization strategy.
+
+      Available functions
+      1. Serialize : serializes an object to string (depends on type xml/json/jsv/base64/...)
+      2. Deserialize : deserializes a string to object (depends on type xml/json/jsv/base64/...)
+      3. DeepCopy : performs deep copied an object
     </description>
     <releaseNotes>
-    </releaseNotes>
-    <summary>
+      Version 4.0.0
+      * Add DeepCopy function
+      * Base64Serialization will throw an exception if object's type is not serializeable.
+
       Version 3.1.0
       * Base64Serialization uses BinaryFormatter and requires object type with Serializable attribute.
-      
+
       Version 3.0.0
       * Supports Xml/Base64/JSON (via DataContractJsonSerializer)
+    </releaseNotes>
+    <summary>
+      This library enables you to serialize an object of any type to string format (xml/json/base64) and to deserialize a resulted string back to object instance. Also it supports to implement a custom serialization strategy.
     </summary>
     <language>en-US</language>
     <projectUrl>https://github.com/netvietdev/serialization-master</projectUrl>
@@ -27,7 +37,7 @@
     <dependencies>
     </dependencies>
     <references></references>
-    <tags>Xml Json Base64 ToString Serialization</tags>
+    <tags>Xml Json Base64 ToString Serialization SerializationMaster</tags>
   </metadata>
   <files>
     <file src="lib\" target="lib" />

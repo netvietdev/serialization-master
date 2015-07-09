@@ -25,7 +25,7 @@
         </group>
     </dependencies>
     <references></references>
-    <tags>Json ToString Serialization</tags>
+    <tags>Json ToString Serialization SerializationMaster</tags>
   </metadata>
   <files>
     <file src="lib\" target="lib" />

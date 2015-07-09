@@ -8,6 +8,8 @@ namespace Rabbit.SerializationMaster.Internal.Strategies
     {
         public string Serialize(object graph)
         {
+            ValidateObjectSerializable(graph);
+
             using (var ms = new MemoryStream())
             {
                 var b = new BinaryFormatter();
@@ -23,6 +25,17 @@ namespace Rabbit.SerializationMaster.Internal.Strategies
             {
                 var b = new BinaryFormatter();
                 return b.Deserialize(ms);
+            }
+        }
+
+        private void ValidateObjectSerializable(object graph)
+        {
+            var type = graph.GetType();
+            if (!type.IsSerializable)
+            {
+                throw new ArgumentException(
+                    string.Format("The type {0} is not serializable, it must be decorated with Serializable attribute",
+                                  type.FullName));
             }
         }
     }

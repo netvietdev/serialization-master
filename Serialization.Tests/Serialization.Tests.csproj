@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Common\Base64SerializationStrategyTest.cs" />
     <Compile Include="Common\DataContractJsonSerializationStrategyTest.cs" />
+    <Compile Include="Common\DeepCopyTest.cs" />
     <Compile Include="Common\XmlSerializationStrategyTest.cs" />
     <Compile Include="Web\JavaScriptSerializationStrategyTest.cs" />
     <Compile Include="ObjectTests\Address.cs" />
