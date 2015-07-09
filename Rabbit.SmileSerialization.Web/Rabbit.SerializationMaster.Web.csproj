@@ -34,10 +34,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="JavaScriptSerializationStrategy.cs" />
+    <Compile Include="JsonSerializationStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="System" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Smile.Serialization\Rabbit.SerializationMaster.csproj">

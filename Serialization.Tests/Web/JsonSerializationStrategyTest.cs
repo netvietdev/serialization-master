@@ -1,16 +1,16 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rabbit.SerializationMaster;
-using Rabbit.SerializationMaster.ServiceStack;
+using Rabbit.SerializationMaster.Web;
 using Serialization.Tests.ObjectTests;
 
-namespace Serialization.Tests.ServiceStack
+namespace Serialization.Tests.Web
 {
     [TestClass]
-    public class JsvSerializationStrategyTest
+    public class JsonSerializationStrategyTest
     {
         private ISerializationStrategy CreateSUT()
         {
-            return new JsvSerializationStrategy();
+            return new JsonSerializationStrategy();
         }
 
         [TestMethod]
@@ -28,14 +28,14 @@ namespace Serialization.Tests.ServiceStack
             var value = sut.Serialize(addr);
 
             // Assert
-            Assert.AreEqual("{Street:Str,Number:1}", value);
+            Assert.AreEqual("{\"Street\":\"Str\",\"Number\":1}", value);
         }
 
         [TestMethod]
         public void CanDeserialize()
         {
             // Arrange
-            var str = "{Street:Str,Number:1}";
+            var str = "{\"Street\":\"Str\",\"Number\":1}";
             var sut = CreateSUT();
 
             // Act
@@ -45,7 +45,6 @@ namespace Serialization.Tests.ServiceStack
             Assert.AreEqual("Str", obj.Street);
             Assert.AreEqual(1, obj.Number);
         }
-
 
         [TestMethod]
         public void CanSerializeAnonymousObject()
@@ -58,14 +57,14 @@ namespace Serialization.Tests.ServiceStack
             var value = sut.Serialize(obj);
 
             // Assert
-            Assert.AreEqual("{Name:John,Age:10}", value);
+            Assert.AreEqual("{\"Name\":\"John\",\"Age\":10}", value);
         }
 
         [TestMethod]
         public void CanDeserializeAnonymousObject()
         {
             // Arrange
-            var str = "{Name:John,Age:10}";
+            var str = "{\"Name\":\"John\",\"Age\":10}";
             var sut = CreateSUT();
 
             // Act

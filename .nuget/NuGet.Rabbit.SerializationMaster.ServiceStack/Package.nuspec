@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster.ServiceStack</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>SerializationMaster ServiceStack</title>
     <authors>NetVietDev</authors>
     <owners>junioho</owners>
@@ -21,7 +21,7 @@
     <copyright>Copyright @ NetVietDev 2015</copyright>
     <dependencies>
         <group targetFramework="net40">
-          <dependency id="Rabbit.SerializationMaster" version="3.0.0" />
+          <dependency id="Rabbit.SerializationMaster" version="4.0.0" />
           <dependency id="ServiceStack.Text" version="4.0.40" />
         </group>
     </dependencies>

@@ -41,8 +41,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Rabbit.SerializationMaster">
-      <HintPath>..\..\packages\Rabbit.SerializationMaster.3.0.0\lib\Rabbit.SerializationMaster.dll</HintPath>
+    <Reference Include="Rabbit.SerializationMaster, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Rabbit.SerializationMaster.4.0.0\lib\Rabbit.SerializationMaster.dll</HintPath>
     </Reference>
     <Reference Include="Rabbit.SerializationMaster.Web">
       <HintPath>..\..\packages\Rabbit.SerializationMaster.Web.1.0.0\lib\Rabbit.SerializationMaster.Web.dll</HintPath>

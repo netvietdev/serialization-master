@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Rabbit.SerializationMaster;
+﻿using Rabbit.SerializationMaster;
 using Rabbit.SerializationMaster.JsonNet;
+using System;
 
 namespace TestPackageSerializationMasterJsonNet
 {
@@ -22,7 +21,8 @@ namespace TestPackageSerializationMasterJsonNet
             var text = obj.Serialize();
             Console.WriteLine(text);
 
-            var obj2 = Serializer.Deserialize<dynamic>(text);
+            var obj2 = text.Deserialize<object>();
+            var typeName = obj2.GetType().Name;
 
             Console.ReadLine();
         }

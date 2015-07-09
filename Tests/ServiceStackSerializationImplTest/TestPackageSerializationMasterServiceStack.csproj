@@ -44,12 +44,13 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Rabbit.SerializationMaster">
-      <HintPath>..\..\packages\Rabbit.SerializationMaster.3.0.0\lib\Rabbit.SerializationMaster.dll</HintPath>
+      <HintPath>..\..\packages\Rabbit.SerializationMaster.4.0.0\lib\Rabbit.SerializationMaster.dll</HintPath>
     </Reference>
     <Reference Include="Rabbit.SerializationMaster.ServiceStack">
-      <HintPath>..\..\packages\Rabbit.SerializationMaster.ServiceStack.1.0.0\lib\Rabbit.SerializationMaster.ServiceStack.dll</HintPath>
+      <HintPath>..\..\packages\Rabbit.SerializationMaster.ServiceStack.1.0.1\lib\Rabbit.SerializationMaster.ServiceStack.dll</HintPath>
     </Reference>
-    <Reference Include="ServiceStack.Text">
+    <Reference Include="ServiceStack.Text, Version=4.0.40.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\ServiceStack.Text.4.0.40\lib\net40\ServiceStack.Text.dll</HintPath>
     </Reference>
   </ItemGroup>

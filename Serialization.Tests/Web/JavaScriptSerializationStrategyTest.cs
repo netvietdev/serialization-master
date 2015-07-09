@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rabbit.SerializationMaster;
 using Rabbit.SerializationMaster.Web;
 using Serialization.Tests.ObjectTests;
@@ -44,6 +45,35 @@ namespace Serialization.Tests.Web
             // Assert
             Assert.AreEqual("Str", obj.Street);
             Assert.AreEqual(1, obj.Number);
+        }
+
+        [TestMethod]
+        public void CanSerializeAnonymousObject()
+        {
+            // Arrange
+            var obj = new { Name = "John", Age = 10 };
+            var sut = CreateSUT();
+
+            // Act
+            var value = sut.Serialize(obj);
+
+            // Assert
+            Assert.AreEqual("{\"Name\":\"John\",\"Age\":10}", value);
+        }
+
+        [TestMethod]
+        public void CanDeserializeAnonymousObject()
+        {
+            // Arrange
+            var str = "{\"Name\":\"John\",\"Age\":10}";
+            var sut = CreateSUT();
+
+            // Act
+            var obj = (Dictionary<string, object>)sut.Deserialize(typeof(object), str);
+
+            // Assert
+            Assert.AreEqual("John", obj["Name"]);
+            Assert.AreEqual(10, obj["Age"]);
         }
     }
 }

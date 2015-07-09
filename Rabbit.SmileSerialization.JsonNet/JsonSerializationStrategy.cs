@@ -33,7 +33,7 @@ namespace Rabbit.SerializationMaster.JsonNet
 
         public object Deserialize(Type graphType, string serializedValue)
         {
-            if (graphType == typeof(object) || graphType == typeof(dynamic))
+            if (graphType == typeof(object))
             {
                 return JsonConvert.DeserializeObject(serializedValue);
             }

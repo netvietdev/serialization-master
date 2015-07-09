@@ -7,13 +7,12 @@ namespace TestPackageSerializationMasterWeb
 {
     public class Global : HttpApplication
     {
-
         protected void Application_Start(object sender, EventArgs e)
         {
             SerializationContext.Current.Initialize(new JavaScriptSerializationStrategy());
+            
             var obj = new { Name = "John", Age = 10 };
             var text = obj.Serialize();
-            text.Deserialize<Global>();
         }
 
         protected void Session_Start(object sender, EventArgs e)

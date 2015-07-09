@@ -14,7 +14,7 @@ namespace ServiceStackSerializationImplTest
             var text = obj.Serialize();
             Console.WriteLine(text);
 
-            var obj2 = Serializer.Deserialize<object>(text);
+            var obj2 = text.Deserialize<object>();
             var typeName = obj2.GetType().Name;
 
             Console.ReadLine();

@@ -37,6 +37,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -62,6 +63,7 @@
     <Compile Include="JsonNet\JsonSerializationStrategyTest.cs" />
     <Compile Include="ServiceStack\JsonSerializationStrategyTest.cs" />
     <Compile Include="ServiceStack\JsvSerializationStrategyTest.cs" />
+    <Compile Include="Web\JsonSerializationStrategyTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Rabbit.SerializationMaster.ServiceStack\Rabbit.SerializationMaster.ServiceStack.csproj">
