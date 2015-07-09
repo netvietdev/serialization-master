@@ -42,6 +42,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Rabbit.SerializationMaster">
       <HintPath>..\..\packages\Rabbit.SerializationMaster.3.0.0\lib\Rabbit.SerializationMaster.dll</HintPath>
     </Reference>

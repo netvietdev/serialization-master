@@ -6,7 +6,7 @@ namespace TestPackageSerializationMaster
     {
         static void Main(string[] args)
         {
-            SerializationContext.Current.Initialize(SerializationType.Xml);
+            SerializationContext.Current.Initialize(SerializationType.Base64);
         }
     }
 }
