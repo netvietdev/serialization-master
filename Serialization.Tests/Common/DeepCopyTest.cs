@@ -26,5 +26,31 @@ namespace Serialization.Tests.Common
             Assert.AreEqual(addr.Number, newAddr.Number);
             Assert.AreEqual(addr.Street, newAddr.Street);
         }
+
+        [TestMethod]
+        public void CanIgnoreSerializationOnStringType()
+        {
+            // Arrange
+            const string source = "This is a string";
+
+            // Act
+            var result = source.Serialize();
+
+            // Assert
+            Assert.AreEqual(source, result);
+        }
+
+        [TestMethod]
+        public void CanIgnoreDeserializationOnStringType()
+        {
+            // Arrange
+            const string result = "This is a string";
+
+            // Act
+            var entity = result.Deserialize<string>();
+
+            // Assert
+            Assert.AreEqual(entity, result);
+        }
     }
 }
