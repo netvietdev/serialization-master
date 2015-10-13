@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster.JsonNet</id>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <title>SerializationMaster JsonNet</title>
     <authors>NetVietDev</authors>
     <owners></owners>
@@ -16,19 +16,19 @@
     <summary>
     </summary>
     <language>en-US</language>
-    <projectUrl>https://github.com/netvietdev/serialization-master</projectUrl>
+    <projectUrl>https://juanonsoftware.github.io/SerializationMaster-Package/</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
     <copyright>Copyright @ NetVietDev 2015</copyright>
     <dependencies>
       <group targetFramework="net40">
-        <dependency id="Rabbit.SerializationMaster" version="4.0.0" />
+        <dependency id="Rabbit.SerializationMaster" version="4.0.1" />
         <dependency id="Newtonsoft.Json" version="6.0.4" />
       </group>
     </dependencies>
     <references></references>
-    <tags>Json ToString Serialization SerializationMaster</tags>
+    <tags>Json Serialization SerializationMaster</tags>
   </metadata>
   <files>
     <file src="lib\" target="lib" />

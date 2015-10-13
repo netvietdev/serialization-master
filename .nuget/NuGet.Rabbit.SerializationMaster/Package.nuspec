@@ -29,7 +29,7 @@
       This library enables you to serialize an object of any type to string format (xml/json/base64) and to deserialize a resulted string back to object instance. Also it supports to implement a custom serialization strategy.
     </summary>
     <language>en-US</language>
-    <projectUrl>https://github.com/netvietdev/serialization-master</projectUrl>
+    <projectUrl>https://juanonsoftware.github.io/SerializationMaster-Package/</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>

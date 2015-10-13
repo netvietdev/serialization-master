@@ -31,6 +31,7 @@ namespace Rabbit.SerializationMaster.Internal.Strategies
         private void ValidateObjectSerializable(object graph)
         {
             var type = graph.GetType();
+
             if (!type.IsSerializable)
             {
                 throw new ArgumentException(
