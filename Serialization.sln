@@ -24,8 +24,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization.Tests", "Seri
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{D7B4E3E3-02B8-4DE8-8942-077E64F6DC5C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{EF22D5F4-4D7B-46B9-9DD7-B96AEAF699B2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Rabbit.SerializationMaster", ".nuget\NuGet.Rabbit.SerializationMaster\NuGet.Rabbit.SerializationMaster.csproj", "{C07BD58D-E42D-4325-9521-042AF609F6E1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Rabbit.SerializationMaster.Web", ".nuget\NuGet.Rabbit.SerializationMaster.Web\NuGet.Rabbit.SerializationMaster.Web.csproj", "{50E22A95-41DD-4FFD-B7B2-578B9860BFC6}"
