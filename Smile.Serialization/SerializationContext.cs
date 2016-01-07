@@ -1,5 +1,5 @@
-﻿using System;
-using Rabbit.SerializationMaster.Internal;
+﻿using Rabbit.SerializationMaster.Strategies;
+using System;
 
 namespace Rabbit.SerializationMaster
 {

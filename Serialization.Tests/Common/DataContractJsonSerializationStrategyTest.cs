@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rabbit.SerializationMaster;
-using Rabbit.SerializationMaster.Internal.Strategies;
+using Rabbit.SerializationMaster.Strategies;
 using Serialization.Tests.ObjectTests;
 
 namespace Serialization.Tests.Common

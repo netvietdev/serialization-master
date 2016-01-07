@@ -2,9 +2,9 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace Rabbit.SerializationMaster.Internal.Strategies
+namespace Rabbit.SerializationMaster.Strategies
 {
-    internal class Base64SerializationStrategy : ISerializationStrategy
+    public class Base64SerializationStrategy : ISerializationStrategy
     {
         public string Serialize(object graph)
         {

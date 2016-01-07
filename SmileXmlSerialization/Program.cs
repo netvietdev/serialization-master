@@ -1,4 +1,5 @@
 ﻿using Rabbit.SerializationMaster;
+using Rabbit.SerializationMaster.Strategies;
 using Rabbit.SerializationMaster.Web;
 using SmileXmlSerialization.ObjectTests;
 using System;
@@ -95,6 +96,14 @@ namespace SmileXmlSerialization
                 Console.WriteLine("Length is: " + result.Length);
 
                 p2 = result.Deserialize<Person>();
+                Console.WriteLine("Json deserialized result: " + p2.Name + " | " + p2.Age + " | " + p2.LivingAddress.Number);
+
+                Console.WriteLine("Use custom strategy");
+                result = p1.Serialize(new Base64SerializationStrategy());
+                Console.WriteLine("Json serialized result: " + result);
+                Console.WriteLine("Length is: " + result.Length);
+
+                p2 = result.Deserialize<Person>(new Base64SerializationStrategy());
                 Console.WriteLine("Json deserialized result: " + p2.Name + " | " + p2.Age + " | " + p2.LivingAddress.Number);
             }
             catch (Exception ex)

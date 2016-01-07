@@ -2,9 +2,9 @@
 using System.IO;
 using System.Xml.Serialization;
 
-namespace Rabbit.SerializationMaster.Internal.Strategies
+namespace Rabbit.SerializationMaster.Strategies
 {
-    internal class XmlSerializationStrategy : ISerializationStrategy
+    public class XmlSerializationStrategy : ISerializationStrategy
     {
         public string Serialize(object @object)
         {

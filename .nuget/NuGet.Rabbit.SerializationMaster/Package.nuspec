@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster</id>
-    <version>4.0.1</version>
+    <version>4.1.0</version>
     <title>SerializationMaster</title>
     <authors>NetVietDev</authors>
     <owners>junioho</owners>
@@ -16,16 +16,16 @@
       For detail please check project site https://juanonsoftware.github.io/SerializationMaster-Package/
     </description>
     <releaseNotes>
+      Version 4.1.0
+      * Extension methods (Serialize/Deserialize/DeepCopy) how have another overload with one-time-usage strategy
+      * Internal strategies now are public (Base64SerializationStrategy, DataContractJsonSerializationStrategy, XmlSerializationStrategy)
       Version 4.0.1
       * Fix Serialization behavior when object type is String.
-      
       Version 4.0.0
       * Add DeepCopy function
       * Base64Serialization will throw an exception if object's type is not serializeable.
-
       Version 3.1.0
       * Base64Serialization uses BinaryFormatter and requires object type with Serializable attribute.
-
       Version 3.0.0
       * Supports Xml/Base64/JSON (via DataContractJsonSerializer)
     </releaseNotes>

@@ -2,9 +2,9 @@
 using System.IO;
 using System.Runtime.Serialization.Json;
 
-namespace Rabbit.SerializationMaster.Internal.Strategies
+namespace Rabbit.SerializationMaster.Strategies
 {
-    internal class DataContractJsonSerializationStrategy : ISerializationStrategy
+    public class DataContractJsonSerializationStrategy : ISerializationStrategy
     {
         public string Serialize(object graph)
         {

@@ -1,7 +1,6 @@
-﻿using Rabbit.SerializationMaster.Internal.Strategies;
-using System;
+﻿using System;
 
-namespace Rabbit.SerializationMaster.Internal
+namespace Rabbit.SerializationMaster.Strategies
 {
     internal class SerializationStrategyBuilder
     {
