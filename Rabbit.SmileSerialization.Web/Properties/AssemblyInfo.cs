@@ -34,4 +34,5 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: InternalsVisibleTo("Serialization.Tests")]
+[assembly: AssemblyKeyFile(@"..\..\..\BitBucket\SigningKeys\SerializationMaster.snk")]
+[assembly: InternalsVisibleTo("Serialization.Tests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100f9a88661a378ef72e7b66d7e4b3b8fcbdd4521af26e3570386e3495c02e00bb18d6cac1cfc0ad38563e1fdb5be263d8768d610afed318e24a3305b3d1fe656b55b30132208c4ef55834463dab81c95a1642c3051050ec37fc268ad5877f839ec3575d706ac2c187e949184ba345c2329ca6f3268a16656712bf93fde67d4d0a2")]

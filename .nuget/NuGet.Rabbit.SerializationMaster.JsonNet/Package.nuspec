@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster.JsonNet</id>
-    <version>2.0.1</version>
+    <version>2.0.3</version>
     <title>SerializationMaster JsonNet</title>
     <authors>NetVietDev</authors>
     <owners>junioho</owners>
@@ -10,6 +10,8 @@
       This library enables you to serialize an object of any type to json format and to deserialize a resulted string back to object instance based on Json.NET.
     </description>
     <releaseNotes>
+      Version 2.0.2
+      * Signed assembly
       Version 2.0.0
       * Supports JsonSerializerSettings in constructor of JsonSerializationStrategy
     </releaseNotes>
@@ -23,7 +25,7 @@
     <copyright>Copyright @ NetVietDev 2015</copyright>
     <dependencies>
       <group targetFramework="net40">
-        <dependency id="Rabbit.SerializationMaster" version="4.0.1" />
+        <dependency id="Rabbit.SerializationMaster" version="4.1.1" />
         <dependency id="Newtonsoft.Json" version="6.0.4" />
       </group>
     </dependencies>

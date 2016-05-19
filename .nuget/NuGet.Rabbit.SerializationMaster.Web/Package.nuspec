@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster.Web</id>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <title>SerializationMaster</title>
     <authors>NetVietDev</authors>
     <owners></owners>
@@ -10,8 +10,10 @@
       This library enables you to serialize an object of any type to json format and to deserialize a resulted string back to object instance based on JavaScriptSerializer.
     </description>
     <releaseNotes>
+      Version 1.1.2
+      * Signed assembly
       Version 1.1.0
-      * Add a new strategy JsonSerializationStrategy which uses System.Web.Helpers.JSon methods
+      * Added a new strategy JsonSerializationStrategy which uses System.Web.Helpers.JSon methods
     </releaseNotes>
     <summary>
     </summary>
@@ -23,7 +25,7 @@
     <copyright>Copyright @ NetVietDev 2015</copyright>
     <dependencies>
         <group targetFramework="net40">
-          <dependency id="Rabbit.SerializationMaster" version="4.0.1" />
+          <dependency id="Rabbit.SerializationMaster" version="4.1.1" />
         </group>
     </dependencies>
     <references></references>

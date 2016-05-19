@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Rabbit.SerializationMaster")]
-[assembly: AssemblyDescription("A serialization library which supports various types of serializing, including Xml, Json (from .NET standard to custom libs)")]
+[assembly: AssemblyTitle("Rabbit.SerializationMaster.Csv")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Rabbit Software")]
-[assembly: AssemblyProduct("Rabbit.SerializationMaster")]
-[assembly: AssemblyCopyright("Copyright © 2015 Rabbit Software")]
-[assembly: AssemblyTrademark("Rabbit SerializationMaster")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Rabbit.SerializationMaster.Csv")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("64434c95-5c61-48be-97bd-64889637fb3c")]
+[assembly: Guid("5eb04b95-56ff-4426-95bd-689ac986a9a6")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,7 +32,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("4.1.0.0")]
-[assembly: AssemblyFileVersion("4.1.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
 [assembly: AssemblyKeyFile(@"..\..\..\BitBucket\SigningKeys\SerializationMaster.snk")]
-[assembly: InternalsVisibleTo("Serialization.Tests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100f9a88661a378ef72e7b66d7e4b3b8fcbdd4521af26e3570386e3495c02e00bb18d6cac1cfc0ad38563e1fdb5be263d8768d610afed318e24a3305b3d1fe656b55b30132208c4ef55834463dab81c95a1642c3051050ec37fc268ad5877f839ec3575d706ac2c187e949184ba345c2329ca6f3268a16656712bf93fde67d4d0a2")]

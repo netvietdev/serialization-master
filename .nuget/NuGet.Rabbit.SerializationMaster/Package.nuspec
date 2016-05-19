@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster</id>
-    <version>4.1.0</version>
+    <version>4.1.1</version>
     <title>SerializationMaster</title>
     <authors>NetVietDev</authors>
     <owners>junioho</owners>
@@ -16,6 +16,8 @@
       For detail please check project site https://juanonsoftware.github.io/SerializationMaster-Package/
     </description>
     <releaseNotes>
+      Version 4.1.1
+      * Signed assembly
       Version 4.1.0
       * Extension methods (Serialize/Deserialize/DeepCopy) how have another overload with one-time-usage strategy
       * Internal strategies now are public (Base64SerializationStrategy, DataContractJsonSerializationStrategy, XmlSerializationStrategy)
