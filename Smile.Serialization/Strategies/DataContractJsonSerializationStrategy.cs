@@ -9,8 +9,19 @@ namespace Rabbit.SerializationMaster.Strategies
         public string Serialize(object graph)
         {
             var serializer = new DataContractJsonSerializer(graph.GetType());
+            return Serialize(serializer, graph);
+        }
 
+        public object Deserialize(Type graphType, string serializedValue)
+        {
+            var serializer = new DataContractJsonSerializer(graphType);
+            return Serialize(serializer, serializedValue);
+        }
+
+        protected string Serialize(DataContractJsonSerializer serializer, object graph)
+        {
             var stream = new MemoryStream();
+
             serializer.WriteObject(stream, graph);
             stream.Flush();
 
@@ -21,10 +32,10 @@ namespace Rabbit.SerializationMaster.Strategies
             }
         }
 
-        public object Deserialize(Type graphType, string serializedValue)
+        protected object Deserialize(DataContractJsonSerializer serializer, string serializedValue)
         {
-            var serializer = new DataContractJsonSerializer(graphType);
             var memoryStream = new MemoryStream();
+
             using (var writer = new StreamWriter(memoryStream))
             {
                 writer.Write(serializedValue);
