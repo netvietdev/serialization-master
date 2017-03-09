@@ -6,13 +6,13 @@ namespace Rabbit.SerializationMaster.Strategies
 {
     public class DataContractJsonSerializationStrategy : ISerializationStrategy
     {
-        public string Serialize(object graph)
+        public virtual string Serialize(object graph)
         {
             var serializer = new DataContractJsonSerializer(graph.GetType());
             return Serialize(serializer, graph);
         }
 
-        public object Deserialize(Type graphType, string serializedValue)
+        public virtual object Deserialize(Type graphType, string serializedValue)
         {
             var serializer = new DataContractJsonSerializer(graphType);
             return Serialize(serializer, serializedValue);

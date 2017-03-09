@@ -25,3 +25,5 @@
 /Serialization.sln.DotSettings.user
 /Serialization.v11.suo
 /Tests/TestPackageSerializationMasterWeb/TestPackageSerializationMasterWeb.csproj.user
+/Serialization.v12.suo
+/.nuget/NuGet.Rabbit.SerializationMaster/NuGet.log

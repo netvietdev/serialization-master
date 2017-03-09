@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster</id>
-    <version>4.1.1</version>
+    <version>4.2.1</version>
     <title>SerializationMaster</title>
     <authors>NetVietDev</authors>
     <owners>junioho</owners>
@@ -48,6 +48,5 @@
   <files>
     <file src="lib\" target="lib" />
     <file src="tools\" target="tools" />
-    <file src="content\" target="content" />
   </files>
 </package>
