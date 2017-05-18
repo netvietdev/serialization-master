@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.SerializationMaster</id>
-    <version>4.2.1</version>
+    <version>4.2.2</version>
     <title>SerializationMaster</title>
     <authors>NetVietDev</authors>
     <owners>junioho</owners>

@@ -15,7 +15,7 @@ namespace Rabbit.SerializationMaster.Strategies
         public virtual object Deserialize(Type graphType, string serializedValue)
         {
             var serializer = new DataContractJsonSerializer(graphType);
-            return Serialize(serializer, serializedValue);
+            return Deserialize(serializer, serializedValue);
         }
 
         protected string Serialize(DataContractJsonSerializer serializer, object graph)
